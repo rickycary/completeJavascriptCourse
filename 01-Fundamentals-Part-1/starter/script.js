@@ -19,22 +19,35 @@
 //
 // Data Types 
 //
+// let javascriptIsFun = true;
+// console.log(javascriptIsFun);
 
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
+// console.log(typeof true);
+// console.log(typeof javascriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'Ricky');
 
-console.log(typeof true);
-console.log(typeof javascriptIsFun);
-console.log(typeof 23);
-console.log(typeof 'Ricky');
+// javascriptIsFun = 'Yes!';
 
-javascriptIsFun = 'Yes!';
+// console.log(typeof javascriptIsFun);
 
-console.log(typeof javascriptIsFun);
+// let year;
+// console.log(year);
+// console.log(typeof year);
 
-let year;
-console.log(year);
-console.log(typeof year);
+// year = 1991;
+// console.log(year)
 
-year = 1991;
-console.log(year)
+// -------------- let, const and var ---------------//
+
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+
+// Never use var 
+var job = 'programmer';
+job = 'nurse';
+
+lastName = 'Cary';
+console.log(lastName)
