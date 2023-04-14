@@ -29,3 +29,13 @@ console.log(population)
 console.log(population > finland)
 console.log(population < averagePopulation)
 console.log(description)
+
+const myName = 'Ricky';
+const wifesName = 'Jovana';
+const currentYear = 2023
+const yearsMarried = currentYear - 2021;
+const cat1 = 'Moonlight';
+const cat2 = 'Wednesday';
+
+console.log(`My name is ${myName} and I am married to my wife ${wifesName}. 
+We have been married for ${yearsMarried} years and have two cats ${cat1} and ${cat2}.`)
