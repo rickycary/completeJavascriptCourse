@@ -40,14 +40,21 @@
 
 // -------------- let, const and var ---------------//
 
-let age = 30;
-age = 31;
+// let age = 30;
+// age = 31;
 
-const birthYear = 1991;
+// const birthYear = 1991;
 
-// Never use var 
-var job = 'programmer';
-job = 'nurse';
+// // Never use var 
+// var job = 'programmer';
+// job = 'nurse';
 
-lastName = 'Cary';
-console.log(lastName)
+// lastName = 'Cary';
+// console.log(lastName)
+
+// -------------- Basic Operators ---------------//
+const ageRicky = 2023 - 1991;
+const ageJovana = 2023 - 1991;
+console.log(ageRicky, ageJovana);
+console.log(ageRicky * 2, ageRicky / 2, 2 ** 3);
+
