@@ -29,4 +29,3 @@ console.log(population)
 console.log(population > finland)
 console.log(population < averagePopulation)
 console.log(description)
-
