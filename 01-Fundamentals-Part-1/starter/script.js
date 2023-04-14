@@ -53,8 +53,26 @@
 // console.log(lastName)
 
 // -------------- Basic Operators ---------------//
-const ageRicky = 2023 - 1991;
-const ageJovana = 2023 - 1991;
+const now = 2023
+const ageRicky = now - 1991;
+const ageJovana = now - 1991;
 console.log(ageRicky, ageJovana);
 console.log(ageRicky * 2, ageRicky / 2, 2 ** 3);
 
+const firstName = 'Ricky';
+const lastName = 'Cary';
+console.log(firstName + ' ' + lastName);
+
+// Assignment Operators
+let x = 10 + 5;
+x += 10; // x = x + 10
+x *= 4 // x = x * 4 = 100
+x++ // x = x + 1
+console.log(x);
+
+// Comparison Operators
+console.log(ageJovana > ageRicky);
+console.log(ageRicky >= 18);
+
+const isFullAge = ageRicky >= 18;
+console.log(now - 1991 > now - 2018);
