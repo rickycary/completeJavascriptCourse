@@ -80,6 +80,23 @@
 // -------------- Operator Precedence ---------------//
 // console.log(25 - 10 - 5)
 
-let x, y;
-x = y = 25 - 10 -5
-console.log(x, y); 
+// let x, y;
+// x = y = 25 - 10 -5
+// console.log(x, y); 
+
+// -------------- String and Template Literals ---------------//
+const firstName = 'Ricky';
+const job = 'nurse';
+const newJob = 'Software Developer'
+const birthYear = 1991;
+const year = 2023
+
+const ricky = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(ricky)
+
+const rickyNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}, but I'm transitioning to becoming a ${newJob}!`
+console.log(rickyNew)
+
+console.log(`String
+multiple
+lines`)
