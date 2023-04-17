@@ -85,18 +85,38 @@
 // console.log(x, y); 
 
 // -------------- String and Template Literals ---------------//
-const firstName = 'Ricky';
-const job = 'nurse';
-const newJob = 'Software Developer'
-const birthYear = 1991;
-const year = 2023
+// const firstName = 'Ricky';
+// const job = 'nurse';
+// const newJob = 'Software Developer'
+// const birthYear = 1991;
+// const year = 2023
 
-const ricky = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
-console.log(ricky)
+// const ricky = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+// console.log(ricky)
 
-const rickyNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}, but I'm transitioning to becoming a ${newJob}!`
-console.log(rickyNew)
+// const rickyNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}, but I'm transitioning to becoming a ${newJob}!`
+// console.log(rickyNew)
 
-console.log(`String
-multiple
-lines`)
+// console.log(`String
+// multiple
+// lines`)
+
+// -------------- Taking Decisions: if / else Statements ---------------//
+const age = 15;
+
+if(age >= 18) {
+    console.log('Sarah can start driving license 🚗')
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young to drive. Wait another ${yearsLeft} years to learn how to drive. `)
+}
+
+const birthYear = 2012;
+let century;
+if(birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+} 
+
+console.log(century)
