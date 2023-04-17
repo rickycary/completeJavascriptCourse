@@ -39,3 +39,10 @@ const cat2 = 'Wednesday';
 
 console.log(`My name is ${myName} and I am married to my wife ${wifesName}. 
 We have been married for ${yearsMarried} years and have two cats ${cat1} and ${cat2}.`)
+
+population = 34
+if(population > 33) {
+    console.log(`Portugal's population is above average`)
+} else {
+    console.log(`Portugal's population is 22 million below average`)
+}
