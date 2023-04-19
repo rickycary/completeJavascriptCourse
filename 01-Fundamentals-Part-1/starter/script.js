@@ -102,21 +102,33 @@
 // lines`)
 
 // -------------- Taking Decisions: if / else Statements ---------------//
-const age = 15;
+// const age = 15;
 
-if(age >= 18) {
-    console.log('Sarah can start driving license 🚗')
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young to drive. Wait another ${yearsLeft} years to learn how to drive. `)
-}
+// if(age >= 18) {
+//     console.log('Sarah can start driving license 🚗')
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young to drive. Wait another ${yearsLeft} years to learn how to drive. `)
+// }
 
-const birthYear = 2012;
-let century;
-if(birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-} 
+// const birthYear = 2012;
+// let century;
+// if(birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// } 
 
-console.log(century)
+// console.log(century)
+
+// -------------- Type Conversion and Coercion ---------------//
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
+console.log(typeof NaN);
+console.log(String(23), 23);
+
+// type coercion
+console.log('I am ' + 23 + ' years old' )
+console.log('23' - '10' - 3)
