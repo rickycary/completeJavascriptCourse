@@ -58,13 +58,35 @@
 //     console.log("No borders")
 // }
 
-const languageEnglish = true; 
-const populationLessthan50 = true;
-const notAnIsland = true; 
-console.log(languageEnglish && populationLessthan50 && notAnIsland)
+// const languageEnglish = true; 
+// const populationLessthan50 = true;
+// const notAnIsland = true; 
+// console.log(languageEnglish && populationLessthan50 && notAnIsland)
 
-if (languageEnglish && populationLessthan50 && !notAnIsland) {
-    console.log("You should live in Portugal!")
-} else {
-    console.log("Portugal does not meet your criteria...")
+// if (languageEnglish && populationLessthan50 && !notAnIsland) {
+//     console.log("You should live in Portugal!")
+// } else {
+//     console.log("Portugal does not meet your criteria...")
+// }
+
+const language = 'english'
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log("Most number of native speakers")
+        break;
+    case 'spanish':
+        console.log("2nd place in number of native speakers")
+        break;
+    case 'english':
+        console.log("3rd place");
+        break;
+    case 'hindi':
+        console.log("4th place");
+        break;
+    case 'arabic':
+        console.log("5th place");
+        break;
+    default:
+        console.log("Great language too!")
 }
