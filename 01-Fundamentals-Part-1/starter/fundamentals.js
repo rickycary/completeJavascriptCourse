@@ -58,3 +58,13 @@
 //     console.log("No borders")
 // }
 
+const languageEnglish = true; 
+const populationLessthan50 = true;
+const notAnIsland = true; 
+console.log(languageEnglish && populationLessthan50 && notAnIsland)
+
+if (languageEnglish && populationLessthan50 && !notAnIsland) {
+    console.log("You should live in Portugal!")
+} else {
+    console.log("Portugal does not meet your criteria...")
+}
