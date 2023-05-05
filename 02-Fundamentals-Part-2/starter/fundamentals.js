@@ -38,3 +38,14 @@ const country2 = precentageOfWorld2(38)
 const country3 = precentageOfWorld2(100)
 
 console.log(country1, country2, country3)
+
+///////////////////
+// Arrow Functions
+///////////////////
+
+const precentageOfWorld3 = (population) => {
+    return (population / 7900) * 100;
+}
+const country4 = precentageOfWorld1(1000);
+
+console.log(country4)
