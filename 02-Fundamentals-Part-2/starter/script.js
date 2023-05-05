@@ -12,23 +12,41 @@
 /////////////////////////////////
 // Functions
 /////////////////////////////////
-function logger() {
-    console.log("My name is Ricky");
-}
+// function logger() {
+//     console.log("My name is Ricky");
+// }
 // Calling / Running / Invoking the function 
-logger();
-logger();
-logger();
+// logger();
+// logger();
+// logger();
 
-function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice; 
+// function fruitProcessor(apples, oranges) {
+//     console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice; 
+// }
+
+// const appleJuice = fruitProcessor(3, 4);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+/////////////////////////////////
+// Function Declarations vs Expressions
+/////////////////////////////////
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
 }
 
-const appleJuice = fruitProcessor(3, 4);
-console.log(appleJuice);
+const age1 = calcAge1(1991);
+console.log(age1)
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
 
+const age2 = calcAge2(1999);
+
+console.log(age1, age2);
