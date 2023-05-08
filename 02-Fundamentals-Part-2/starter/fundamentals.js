@@ -61,3 +61,18 @@ const describePopulation = (country, population) => {
 };
 
 describePopulation('USA', 10)
+
+///////////////////
+// Arrays
+///////////////////
+const populations = [50, 51, 70, 80]
+console.log(populations)
+console.log(populations.length === 4)
+
+const percentages = [
+    precentageOfWorld1(populations[0]),
+    precentageOfWorld1(populations[1]),
+    precentageOfWorld1(populations[2]),
+    precentageOfWorld1(populations[3]),
+]
+console.log(percentages)
