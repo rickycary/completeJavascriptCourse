@@ -90,22 +90,56 @@
 // Reviewing Functions
 ///////////////////
 
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const yearsUntilRetirement = function(birthyear, firstName) {
+//     const age = calcAge(birthyear);
+//     const retirement = 65 - age;
+
+//     if(retirement > 0) {
+//         return `${firstName} retires in ${retirement} years.`
+//     } else {
+//         return `${firstName} has already retired`;
+//     }
+
+//     // return `${firstName} retires in ${retirement} years.`
+// }
+
+// console.log(yearsUntilRetirement(1991, 'Ricky'))
+// console.log(yearsUntilRetirement(1970, 'Mike'))
+
+///////////////////
+// Arrays
+///////////////////
+
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends)
+
+// const year = new Array(1991, 1984, 2008, 2020);
+// console.log(years)
+
+// console.log(friends[0])
+// console.log(friends[2])
+// console.log(friends.length)
+// console.log(friends.length - 1)
+
+// friends[2] = 'Ricky'
+// console.log(friends)
+
+// const firstName = 'Ricky';
+// const ricky = [firstName, 'San Antonio', 2023 - 1991];
+// console.log(ricky)
+// console.log(ricky.length)
+
+// Exercise
 const calcAge = function(birthYear) {
     return 2037 - birthYear;
 }
+const years = [1990, 1967, 2002, 2010, 2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[2]);
 
-const yearsUntilRetirement = function(birthyear, firstName) {
-    const age = calcAge(birthyear);
-    const retirement = 65 - age;
-
-    if(retirement > 0) {
-        return `${firstName} retires in ${retirement} years.`
-    } else {
-        return `${firstName} has already retired`;
-    }
-
-    // return `${firstName} retires in ${retirement} years.`
-}
-
-console.log(yearsUntilRetirement(1991, 'Ricky'))
-console.log(yearsUntilRetirement(1970, 'Mike'))
+console.log(age1, age2, age3)
