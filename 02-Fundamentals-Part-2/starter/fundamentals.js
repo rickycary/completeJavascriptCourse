@@ -76,3 +76,11 @@ const percentages = [
     precentageOfWorld1(populations[3]),
 ]
 console.log(percentages)
+
+const myCountry = {
+    country: 'USA',
+    capital: 'Washington DC',
+    language: 'English',
+    population: 50,
+    neighbors: ['Mexico', 'Canada']
+}
