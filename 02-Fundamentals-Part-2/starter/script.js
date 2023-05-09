@@ -175,46 +175,81 @@
 // Introduction to Objects
 ///////////////////
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
-const introObjects = {
-    firstName: 'Ricky',
-    lastName: 'Cary',
-    age: 32,
-    job: 'Nurse',
-    friends: ['Moonlight', 'Wednesday']
+// const introObjects = {
+//     firstName: 'Ricky',
+//     lastName: 'Cary',
+//     age: 32,
+//     job: 'Nurse',
+//     friends: ['Moonlight', 'Wednesday']
+// };
+
+// ///////////////////
+// // Dot vs Bracket Notation
+// ///////////////////
+
+// console.log(introObjects);
+// console.log(introObjects.lastName);
+// console.log(introObjects['lastName']);
+
+// const nameKey = 'Name';
+// console.log(introObjects['first' + nameKey]);
+// console.log(introObjects['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Ricky? Choose between firstName, lastName, age, job and friends?');
+// console.log(introObjects[interestedIn]);
+
+// if(introObjects[interestedIn]) {
+//     console.log(introObjects[interestedIn]);
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends?')
+// }
+
+// introObjects.location = 'San Antonio';
+// introObjects['linkedIn'] = '@rickycary';
+// console.log(introObjects)
+
+// // Challenge
+// console.log(`${introObjects.firstName} has ${introObjects.friends.length} friends and his best friend is called ${introObjects.friends[0]}`);
+
+///////////////////
+// Object Methods
+///////////////////
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'Teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    // Function
+    // calcAge: function(birthYear) {
+    //     return 2023 - birthYear;
+    // }
+
+    calcAge: function (){
+        // console.log(this)
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+    }
 };
 
-///////////////////
-// Dot vs Bracket Notation
-///////////////////
+console.log(jonas.calcAge())
 
-console.log(introObjects);
-console.log(introObjects.lastName);
-console.log(introObjects['lastName']);
-
-const nameKey = 'Name';
-console.log(introObjects['first' + nameKey]);
-console.log(introObjects['last' + nameKey]);
-
-const interestedIn = prompt('What do you want to know about Ricky? Choose between firstName, lastName, age, job and friends?');
-console.log(introObjects[interestedIn]);
-
-if(introObjects[interestedIn]) {
-    console.log(introObjects[interestedIn]);
-} else {
-    console.log('Wrong request! Choose between firstName, lastName, age, job and friends?')
-}
-
-introObjects.location = 'San Antonio';
-introObjects['linkedIn'] = '@rickycary';
-console.log(introObjects)
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
 
 // Challenge
-console.log(`${introObjects.firstName} has ${introObjects.friends.length} friends and his best friend is called ${introObjects.friends[0]}`);
+console.log(jonas.getSummary());
