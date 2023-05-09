@@ -183,10 +183,38 @@ const jonasArray = [
     ['Michael', 'Peter', 'Steven']
 ];
 
-const jonas = {
+const introObjects = {
     firstName: 'Ricky',
     lastName: 'Cary',
     age: 32,
     job: 'Nurse',
     friends: ['Moonlight', 'Wednesday']
 };
+
+///////////////////
+// Dot vs Bracket Notation
+///////////////////
+
+console.log(introObjects);
+console.log(introObjects.lastName);
+console.log(introObjects['lastName']);
+
+const nameKey = 'Name';
+console.log(introObjects['first' + nameKey]);
+console.log(introObjects['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Ricky? Choose between firstName, lastName, age, job and friends?');
+console.log(introObjects[interestedIn]);
+
+if(introObjects[interestedIn]) {
+    console.log(introObjects[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends?')
+}
+
+introObjects.location = 'San Antonio';
+introObjects['linkedIn'] = '@rickycary';
+console.log(introObjects)
+
+// Challenge
+console.log(`${introObjects.firstName} has ${introObjects.friends.length} friends and his best friend is called ${introObjects.friends[0]}`);
