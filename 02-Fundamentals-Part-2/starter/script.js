@@ -147,26 +147,46 @@
 ///////////////////
 // Basic Array Operations
 ///////////////////
-const friends = ['Ricky', 'Jovana', 'Wednesday'];
+// const friends = ['Ricky', 'Jovana', 'Wednesday'];
 
-// Add Elements
-const newLength = friends.push('Moonlight')
-console.log(friends)
-console.log(newLength)
-friends.unshift('George')
-console.log(friends)
+// // Add Elements
+// const newLength = friends.push('Moonlight')
+// console.log(friends)
+// console.log(newLength)
+// friends.unshift('George')
+// console.log(friends)
 
-// Remove Elements
-const popped = friends.pop();
-console.log(friends)
-friends.shift();
-console.log(friends)
+// // Remove Elements
+// const popped = friends.pop();
+// console.log(friends)
+// friends.shift();
+// console.log(friends)
 
-console.log(friends.indexOf('Jovana'))
+// console.log(friends.indexOf('Jovana'))
 
-console.log(friends.includes('George'))
-console.log(friends.includes('Ricky'))
+// console.log(friends.includes('George'))
+// console.log(friends.includes('Ricky'))
 
-if (friends.includes('Ricky')) {
-    console.log('You have a friend named Ricky')
-}
+// if (friends.includes('Ricky')) {
+//     console.log('You have a friend named Ricky')
+// }
+
+///////////////////
+// Introduction to Objects
+///////////////////
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+    firstName: 'Ricky',
+    lastName: 'Cary',
+    age: 32,
+    job: 'Nurse',
+    friends: ['Moonlight', 'Wednesday']
+};
