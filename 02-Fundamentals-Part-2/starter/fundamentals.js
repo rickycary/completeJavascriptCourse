@@ -84,3 +84,9 @@ const myCountry = {
     population: 50,
     neighbors: ['Mexico', 'Canada']
 }
+
+
+///////////////////
+// Dot vs. Bracket Notation
+///////////////////
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries, and a capital called ${myCountry.capital}`)
