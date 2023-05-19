@@ -223,33 +223,52 @@
 // Object Methods
 ///////////////////
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    birthYear: 1991,
-    job: 'Teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
-    // Function
-    // calcAge: function(birthYear) {
-    //     return 2023 - birthYear;
-    // }
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'Teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+//     // Function
+//     // calcAge: function(birthYear) {
+//     //     return 2023 - birthYear;
+//     // }
 
-    calcAge: function (){
-        // console.log(this)
-        this.age = 2023 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
-    }
-};
+//     calcAge: function (){
+//         // console.log(this)
+//         this.age = 2023 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//     }
+// };
 
-console.log(jonas.calcAge())
+// console.log(jonas.calcAge())
 
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
-// Challenge
-console.log(jonas.getSummary());
+// // Challenge
+// console.log(jonas.getSummary());
+
+///////////////////
+// Iteration: For Loop
+///////////////////
+
+// console.log('Lifting weights repetition 1')
+// console.log('Lifting weights repetition 2')
+// console.log('Lifting weights repetition 3')
+// console.log('Lifting weights repetition 4')
+// console.log('Lifting weights repetition 5')
+// console.log('Lifting weights repetition 6')
+// console.log('Lifting weights repetition 7')
+// console.log('Lifting weights repetition 8')
+// console.log('Lifting weights repetition 9')
+// console.log('Lifting weights repetition 10')
+
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights Repitition ${rep}`)
+}
