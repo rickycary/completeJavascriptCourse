@@ -326,14 +326,31 @@ const jonas = [
 // Looping Backwards and Loops in Loops
 ///////////////////
 
-for(let i = jonas.length - 1; i >= 0; i--) {
-    console.log(i, jonas[i])
+// for(let i = jonas.length - 1; i >= 0; i--) {
+//     console.log(i, jonas[i])
+// }
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`--------- Starting Exercise ${exercise}`)
+
+//     for (let rep = 1; rep <= 5; rep++) {
+//         console.log(`Lifting weight repetition ${rep}`)
+//     }
+// }
+
+////////////////////
+// The while loop
+////////////////////
+let rep = 1;
+while (rep <= 10) {
+    // console.log(`Lifting weight repetition ${rep}`);
+    rep++;
 }
 
-for (let exercise = 1; exercise <= 3; exercise++) {
-    console.log(`--------- Starting Exercise ${exercise}`)
+let dice = Math.trunc(Math.random() * 6)
 
-    for (let rep = 1; rep <= 5; rep++) {
-        console.log(`Lifting weight repetition ${rep}`)
-    }
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`) + 1;
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end....');
 }
